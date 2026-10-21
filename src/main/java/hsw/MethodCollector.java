@@ -1,4 +1,7 @@
 package hsw;
+
+import static hsw.Methoden.eineWunderSchoeneKlasseNamensMaja.executeMaja;
+
 public class MethodCollector {
     /**
      * Die main-Methode ruft alle statischen
@@ -12,10 +15,13 @@ public class MethodCollector {
                 + ":" );
         aFirstMethod();
         methodCounter++;
+        bHallo();
+        dHallo();
 // hier kann die nächste Methode folgen.
         System.out.println("Method " + methodCounter
                 + ":" );
         definetlyNotMalware();
+        executeMaja();
         methodCounter++;
     }
     private static void aFirstMethod() {
@@ -24,5 +30,12 @@ public class MethodCollector {
 
     public static void definetlyNotMalware() {
         System.out.println("Installing Virus");
+    private static void bHallo(){
+        System.out.println("Hallo! Jeronimo. ");
+    }
+
+    private static void dHallo(){
+        System.out.println("Hallo! Danielos. ");
     }
 }
+
