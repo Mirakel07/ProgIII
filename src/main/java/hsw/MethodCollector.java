@@ -39,6 +39,9 @@ public class MethodCollector {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
     }
 
+    private static void aNewMethod() {
+        System.out.println("Neue Methode");
+    }
     private static void sleepyMethod() {
         System.out.println("MethodCollector. Taking a nap...");
     }
