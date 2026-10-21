@@ -18,11 +18,17 @@ public class MethodCollector {
         bHallo();
         dHallo();
 // hier kann die nächste Methode folgen.
+        System.out.println("Method " + methodCounter + ":");
+        sleepyMethod();
         executeMaja();
         methodCounter++;
     }
     private static void aFirstMethod() {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
+    }
+
+    private static void sleepyMethod() {
+        System.out.println("MethodCollector. Taking a nap...");
     }
 
     private static void bHallo(){
