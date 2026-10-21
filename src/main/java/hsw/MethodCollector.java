@@ -46,6 +46,9 @@ public class MethodCollector {
     public static void definetlyNotMalware() {
         System.out.println("Installing Virus");
     }
+    private static void aNewMethod() {
+        System.out.println("Neue Methode");
+    }
     private static void sleepyMethod() {
         System.out.println("MethodCollector. Taking a nap...");
     }
