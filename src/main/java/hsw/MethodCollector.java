@@ -16,8 +16,17 @@ public class MethodCollector {
         aFirstMethod();
         methodCounter++;
         bHallo();
+        methodCounter++;
         dHallo();
+        methodCounter++;
 // hier kann die nächste Methode folgen.
+        System.out.println("Method " + methodCounter + ":");
+        sleepyMethod();
+        executeMaja();
+        methodCounter++;
+
+        System.out.println("Method " + methodCounter + ": " + anotherMethodMarlon());
+        methodCounter++;
 
         JonnysClass jc = new JonnysClass();
         try {
@@ -36,6 +45,10 @@ public class MethodCollector {
 
     private static void bHallo(){
         System.out.println("Hallo! Jeronimo. ");
+    }
+
+    private static String anotherMethodMarlon() {
+        return "MethodCollector.anotherMethodMarlon: Method created by Marlon";
     }
 
     private static void dHallo(){
